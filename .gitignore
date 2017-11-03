@@ -1,0 +1,13 @@
+.DS_Store
+dbconfig.php
+configuration.php
+images/
+payswitch_adwane.sql
+test.php
+mailer
+swiftmailer
+font
+bootstrap
+README.md
+LICENSE
+.idea

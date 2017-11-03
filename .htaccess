@@ -1,0 +1,34 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	
+	RewriteRule ^home/?$ index.php [NC,L]
+	
+	RewriteRule ^login/?$ login.php [NC,L]
+	RewriteRule ^switching-services/?$ switching-services.php [NC,L]
+	RewriteRule ^card-hosting-and-management/?$ card-hosting-and-management.php [NC,L]
+	RewriteRule ^fraud-prevention-and-detection/?$ fraud-prevention-and-detection.php [NC,L]
+	RewriteRule ^payment-aggregation/?$ payment-aggregation.php [NC,L]
+	RewriteRule ^24-7-support/?$ 24-7-support.php [NC,L]
+	
+	RewriteRule ^about/?$ about.php [NC,L]
+	RewriteRule ^why-payswitch/?$ why-payswitch.php [NC,L]
+	
+	RewriteRule ^team/?$ team.php [NC,L]
+	RewriteRule ^profile-([/\a-zA-Z0-9_-]+)-([/\a-zA-Z0-9_-]+)-?$ profile.php?staffName=$1&staffID=$2 [QSA,L,B]
+	
+	RewriteRule ^resources/?$ resources.php [NC,L]
+	RewriteRule ^faq/?$ faq.php [NC,L]
+	
+	RewriteRule ^blog/?$ blog.php [NC,L]
+	RewriteRule ^article([/\a-zA-Z0-9_-]+)-?$ article.php?article=$1 [QSA,L,B]
+	
+	RewriteRule ^contact/?$ contact.php [NC,L]
+	RewriteRule ^career/?$ career.php [NC,L]
+
+	RewriteRule ^privacy-policy/?$ privacy-policy.php [NC,L]
+	RewriteRule ^terms-conditions/?$ terms-conditions.php [NC,L]
+	RewriteRule ^admin/?$ admin/index.php [NC,L]
+	
+	RewriteRule ^404/?$ 404.php [NC,L]
+	
+</IfModule>

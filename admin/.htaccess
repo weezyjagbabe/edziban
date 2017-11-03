@@ -1,0 +1,40 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	
+	RewriteRule ^dashboard/?$ index.php [NC,L]
+	
+
+	
+	RewriteRule ^calender/?$ calender.php [NC,L]
+	RewriteRule ^help/?$ help.php [NC,L]
+	
+	RewriteRule ^user-management/?$ user-management.php [NC,L]
+		RewriteRule ^add-user/?$ add-user.php [NC,L]
+		RewriteRule ^edit-user/?$ user-edit.php [NC,L]
+	
+	RewriteRule ^subscribers/?$ subscribers.php [NC,L]
+		RewriteRule ^add-subscriber/?$ add-subscriber.php [NC,L]
+
+	RewriteRule ^foodmenu/?$ foodmenu.php [NC,L]
+    		RewriteRule ^add-weeklymenu/?$ add-weeklymenu.php [NC,L]
+
+    RewriteRule ^cycles/?$ cycles.php [NC,L]
+        		RewriteRule ^add-cycle/?$ add-cycle.php [NC,L]
+
+
+    RewriteRule ^test/?$ test.php [NC,L]
+    		RewriteRule ^add-job/?$ add-job.php [NC,L]
+
+    RewriteRule ^cycle-reconciliations/?$ cycle-reconciliations.php [NC,L]
+	
+	RewriteRule ^contact/?$ contact.php [NC,L]
+	
+	RewriteRule ^login/?$ login.php [NC,L]
+	RewriteRule ^recover/?$ recover.php [NC,L]
+	
+	RewriteRule ^process/?$ process.php [NC,L]
+	RewriteRule ^printout/?$ print.php [NC,L]
+
+	
+	RewriteRule ^404/?$ 404.php [NC,L]	
+</IfModule>
